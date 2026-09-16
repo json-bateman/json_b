@@ -1,12 +1,12 @@
-const express = require('express');
-const cors = require('cors');
+const express = require("express");
+const cors = require("cors");
 const app = express();
 
 //Middleware to parse requests
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
-const port = 3000;
+const port = 3044;
 
 //Homepage, display JSON Bateman
 app.get("/", (_, res) => {
@@ -21,7 +21,6 @@ app.get("/", (_, res) => {
     weight: "167.5lbs",
   });
 });
-
 
 app.get("/teapot", (_, res) => {
   res.status(418);
