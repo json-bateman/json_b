@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const port = 3044;
+const port = 3022;
 
 //Homepage, display JSON Bateman
 app.get("/", (_, res) => {
